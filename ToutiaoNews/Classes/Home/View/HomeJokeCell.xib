@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="237" id="KGk-i7-Jjw" customClass="HomeJokeCell" customModule="ToutiaoNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="237"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="236.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcs-Ao-ia8">
+                        <rect key="frame" x="16" y="172" width="274" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-ah-osj">
+                                <rect key="frame" x="10" y="11" width="39" height="22"/>
+                                <state key="normal" title="顶" image="digup_video_20x20_">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzU-Hc-OFo">
+                                <rect key="frame" x="59" y="11" width="39" height="22"/>
+                                <state key="normal" title="踩" image="digdown_video_20x20_">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-3u-rr9">
+                                <rect key="frame" x="108" y="11" width="57" height="22"/>
+                                <state key="normal" title="评论" image="comment_video_20x20_">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXE-gR-xiD">
+                                <rect key="frame" x="244" y="11" width="20" height="22"/>
+                                <state key="normal" image="repost_video_20x20_">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-zv-Se1">
+                                <rect key="frame" x="214" y="11" width="20" height="22"/>
+                                <state key="normal" image="love_video_20x20_">
+                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v9S-zv-Se1" firstAttribute="centerY" secondItem="dcs-Ao-ia8" secondAttribute="centerY" id="1hs-sN-FKe"/>
+                            <constraint firstItem="ElI-3u-rr9" firstAttribute="leading" secondItem="MzU-Hc-OFo" secondAttribute="trailing" constant="10" id="AfF-WF-AG8"/>
+                            <constraint firstItem="lXE-gR-xiD" firstAttribute="centerY" secondItem="dcs-Ao-ia8" secondAttribute="centerY" id="W2C-UO-8ps"/>
+                            <constraint firstItem="yXI-ah-osj" firstAttribute="leading" secondItem="dcs-Ao-ia8" secondAttribute="leading" constant="10" id="XRq-QA-NoW"/>
+                            <constraint firstItem="lXE-gR-xiD" firstAttribute="leading" secondItem="v9S-zv-Se1" secondAttribute="trailing" constant="10" id="Xly-J3-uED"/>
+                            <constraint firstItem="MzU-Hc-OFo" firstAttribute="leading" secondItem="yXI-ah-osj" secondAttribute="trailing" constant="10" id="YTM-pI-Dim"/>
+                            <constraint firstAttribute="height" constant="44" id="hyT-Px-wxf"/>
+                            <constraint firstItem="ElI-3u-rr9" firstAttribute="centerY" secondItem="dcs-Ao-ia8" secondAttribute="centerY" id="jRb-1x-znp"/>
+                            <constraint firstItem="yXI-ah-osj" firstAttribute="centerY" secondItem="dcs-Ao-ia8" secondAttribute="centerY" id="tZI-uR-fWN"/>
+                            <constraint firstItem="MzU-Hc-OFo" firstAttribute="centerY" secondItem="dcs-Ao-ia8" secondAttribute="centerY" id="v3r-Pd-Y9A"/>
+                            <constraint firstAttribute="trailing" secondItem="lXE-gR-xiD" secondAttribute="trailing" constant="10" id="v6U-5J-fEJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiV-86-Uvs">
+                        <rect key="frame" x="16" y="216" width="274" height="10"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="XOt-Yt-sFD"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-rg-zkx">
+                        <rect key="frame" x="26" y="42" width="254" height="120"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-e4-bov">
+                        <rect key="frame" x="26" y="21" width="254" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="TiV-86-Uvs" secondAttribute="bottom" id="5Ny-4K-p3u"/>
+                    <constraint firstItem="cUV-e4-bov" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="DYM-Y0-PZd"/>
+                    <constraint firstItem="dcs-Ao-ia8" firstAttribute="top" secondItem="1Ld-rg-zkx" secondAttribute="bottom" constant="10" id="HeL-8j-rLq"/>
+                    <constraint firstItem="dcs-Ao-ia8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LHR-dd-eUV"/>
+                    <constraint firstItem="TiV-86-Uvs" firstAttribute="top" secondItem="dcs-Ao-ia8" secondAttribute="bottom" id="ZLZ-yN-wCz"/>
+                    <constraint firstItem="dcs-Ao-ia8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="aia-bK-Xmz"/>
+                    <constraint firstItem="1Ld-rg-zkx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="bm2-xU-7yc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cUV-e4-bov" secondAttribute="trailing" constant="10" id="dsV-7X-QTh"/>
+                    <constraint firstItem="1Ld-rg-zkx" firstAttribute="top" secondItem="cUV-e4-bov" secondAttribute="bottom" id="iX9-dH-S5p"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TiV-86-Uvs" secondAttribute="trailing" id="kPh-NA-lCA"/>
+                    <constraint firstItem="cUV-e4-bov" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="oOP-oD-EKa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1Ld-rg-zkx" secondAttribute="trailing" constant="10" id="s0S-6t-h3z"/>
+                    <constraint firstItem="TiV-86-Uvs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zSP-lk-aBp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentButton" destination="ElI-3u-rr9" id="TRd-t7-ILv"/>
+                <outlet property="dislikeButton" destination="MzU-Hc-OFo" id="OZT-xY-w6i"/>
+                <outlet property="jokeImageView" destination="1Ld-rg-zkx" id="yo6-sg-sn2"/>
+                <outlet property="jokeLabel" destination="cUV-e4-bov" id="GjR-pZ-I5t"/>
+                <outlet property="likeButton" destination="yXI-ah-osj" id="aVj-oX-nhT"/>
+                <outlet property="shareButton" destination="lXE-gR-xiD" id="qSV-cZ-dZ8"/>
+                <outlet property="starButton" destination="v9S-zv-Se1" id="M22-Ff-I2O"/>
+            </connections>
+            <point key="canvasLocation" x="36.799999999999997" y="236.13193403298354"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_video_20x20_" width="20" height="20"/>
+        <image name="digdown_video_20x20_" width="20" height="20"/>
+        <image name="digup_video_20x20_" width="20" height="20"/>
+        <image name="love_video_20x20_" width="20" height="20"/>
+        <image name="repost_video_20x20_" width="20" height="20"/>
+    </resources>
+</document>

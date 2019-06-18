@@ -21,6 +21,7 @@ target 'ToutiaoNews' do
 	pod 'FDFullscreenPopGesture'
 	# pod 'Texture'
 	pod 'lottie-ios'
+	pod "VTMagic"
 
   target 'ToutiaoNewsTests' do
     inherit! :search_paths
